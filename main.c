@@ -14,9 +14,12 @@ int main() {
     printf("输入链表长度:");
     scanf("%d",&len);
 //    PNODE pHead = createHead_linkedList(len);
-//    PNODE pHead = createTail_linkedList(len);
+    PNODE pHead = createTail_linkedList(len);
 //    PNODE pHead = createTail2_linkedList();
-    PNODE  pHead = createHead2_linkedList();
+//    PNODE  pHead = createHead2_linkedList();
+    traverse_linkedList(pHead);
+
+    insert_linkedList(pHead,3,11);
     traverse_linkedList(pHead);
 
     return 0;

@@ -4,6 +4,7 @@
 
 #ifndef C1_LINKEDLIST_H
 #define C1_LINKEDLIST_H
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -20,7 +21,7 @@ PNODE createTail_linkedList(int len);//尾插法生链表
 void  traverse_linkedList(PNODE pHead);
 bool isempty(PNODE pHead);
 int length(PNODE pHead);
-PNODE insert_linkedList(PNODE pHead,int idx,int val);
+bool insert_linkedList(PNODE pHead,int idx,int val);
 PNODE remove_linkedList(PNODE pHead,int idx,int val);
 
 //测试用

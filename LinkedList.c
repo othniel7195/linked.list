@@ -176,10 +176,28 @@ int length(PNODE pHead)
     return i;
 }
 
-PNODE insert_linkedList(PNODE pHead,int idx,int val){
+bool insert_linkedList(PNODE pHead,int idx,int val){
 
-    int len = length(pHead);
-    if (len -1 < idx) return NULL;
+    int i = 0;
+
+    PNODE  p = pHead;
+    //从头结点开始判断每个节点是否为空，在idx上插入节点，那么要获取idx前一个节点
+    while (p != NULL && i<idx-1){
+        p = p->PNEXT;
+
+
+        ++i;
+    }
+
+    //如果idx前一个节点为NULL 那么异常
+    if (p == NULL) return false;
+
+    PNODE pNew = (PNODE)malloc(sizeof(NODE));
+    pNew->data = val;
+    pNew->PNEXT = p->PNEXT;
+    p->PNEXT = pNew;
+
+    return true;
 
 }
 PNODE remove_linkedList(PNODE pHead,int idx,int val){
