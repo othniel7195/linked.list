@@ -1,4 +1,4 @@
-# Install script for directory: /Users/zf/CLionProjects/C1
+# Install script for directory: /Users/zhaofeng/Desktop/数据结构/linked.list
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/zf/CLionProjects/C1/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/zhaofeng/Desktop/数据结构/linked.list/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

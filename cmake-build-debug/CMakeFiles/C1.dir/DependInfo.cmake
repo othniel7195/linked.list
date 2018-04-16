@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/zf/CLionProjects/C1/LinkedList.c" "/Users/zf/CLionProjects/C1/cmake-build-debug/CMakeFiles/C1.dir/LinkedList.c.o"
-  "/Users/zf/CLionProjects/C1/Point.c" "/Users/zf/CLionProjects/C1/cmake-build-debug/CMakeFiles/C1.dir/Point.c.o"
-  "/Users/zf/CLionProjects/C1/main.c" "/Users/zf/CLionProjects/C1/cmake-build-debug/CMakeFiles/C1.dir/main.c.o"
+  "/Users/zhaofeng/Desktop/数据结构/linked.list/LinkedList.c" "/Users/zhaofeng/Desktop/数据结构/linked.list/cmake-build-debug/CMakeFiles/C1.dir/LinkedList.c.o"
+  "/Users/zhaofeng/Desktop/数据结构/linked.list/Point.c" "/Users/zhaofeng/Desktop/数据结构/linked.list/cmake-build-debug/CMakeFiles/C1.dir/Point.c.o"
+  "/Users/zhaofeng/Desktop/数据结构/linked.list/main.c" "/Users/zhaofeng/Desktop/数据结构/linked.list/cmake-build-debug/CMakeFiles/C1.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

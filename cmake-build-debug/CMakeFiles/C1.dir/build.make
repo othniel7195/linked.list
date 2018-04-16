@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zf/CLionProjects/C1
+CMAKE_SOURCE_DIR = /Users/zhaofeng/Desktop/数据结构/linked.list
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zf/CLionProjects/C1/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/zhaofeng/Desktop/数据结构/linked.list/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/C1.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/C1.dir/flags.make
 
 CMakeFiles/C1.dir/main.c.o: CMakeFiles/C1.dir/flags.make
 CMakeFiles/C1.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zf/CLionProjects/C1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/C1.dir/main.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/C1.dir/main.c.o   -c /Users/zf/CLionProjects/C1/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhaofeng/Desktop/数据结构/linked.list/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/C1.dir/main.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/C1.dir/main.c.o   -c /Users/zhaofeng/Desktop/数据结构/linked.list/main.c
 
 CMakeFiles/C1.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/C1.dir/main.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/zf/CLionProjects/C1/main.c > CMakeFiles/C1.dir/main.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/zhaofeng/Desktop/数据结构/linked.list/main.c > CMakeFiles/C1.dir/main.c.i
 
 CMakeFiles/C1.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/C1.dir/main.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/zf/CLionProjects/C1/main.c -o CMakeFiles/C1.dir/main.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/zhaofeng/Desktop/数据结构/linked.list/main.c -o CMakeFiles/C1.dir/main.c.s
 
 CMakeFiles/C1.dir/main.c.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/C1.dir/main.c.o.provides.build: CMakeFiles/C1.dir/main.c.o
 
 CMakeFiles/C1.dir/LinkedList.c.o: CMakeFiles/C1.dir/flags.make
 CMakeFiles/C1.dir/LinkedList.c.o: ../LinkedList.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zf/CLionProjects/C1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/C1.dir/LinkedList.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/C1.dir/LinkedList.c.o   -c /Users/zf/CLionProjects/C1/LinkedList.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhaofeng/Desktop/数据结构/linked.list/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/C1.dir/LinkedList.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/C1.dir/LinkedList.c.o   -c /Users/zhaofeng/Desktop/数据结构/linked.list/LinkedList.c
 
 CMakeFiles/C1.dir/LinkedList.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/C1.dir/LinkedList.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/zf/CLionProjects/C1/LinkedList.c > CMakeFiles/C1.dir/LinkedList.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/zhaofeng/Desktop/数据结构/linked.list/LinkedList.c > CMakeFiles/C1.dir/LinkedList.c.i
 
 CMakeFiles/C1.dir/LinkedList.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/C1.dir/LinkedList.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/zf/CLionProjects/C1/LinkedList.c -o CMakeFiles/C1.dir/LinkedList.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/zhaofeng/Desktop/数据结构/linked.list/LinkedList.c -o CMakeFiles/C1.dir/LinkedList.c.s
 
 CMakeFiles/C1.dir/LinkedList.c.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/C1.dir/LinkedList.c.o.provides.build: CMakeFiles/C1.dir/LinkedList.c.
 
 CMakeFiles/C1.dir/Point.c.o: CMakeFiles/C1.dir/flags.make
 CMakeFiles/C1.dir/Point.c.o: ../Point.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zf/CLionProjects/C1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/C1.dir/Point.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/C1.dir/Point.c.o   -c /Users/zf/CLionProjects/C1/Point.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhaofeng/Desktop/数据结构/linked.list/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/C1.dir/Point.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/C1.dir/Point.c.o   -c /Users/zhaofeng/Desktop/数据结构/linked.list/Point.c
 
 CMakeFiles/C1.dir/Point.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/C1.dir/Point.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/zf/CLionProjects/C1/Point.c > CMakeFiles/C1.dir/Point.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/zhaofeng/Desktop/数据结构/linked.list/Point.c > CMakeFiles/C1.dir/Point.c.i
 
 CMakeFiles/C1.dir/Point.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/C1.dir/Point.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/zf/CLionProjects/C1/Point.c -o CMakeFiles/C1.dir/Point.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/zhaofeng/Desktop/数据结构/linked.list/Point.c -o CMakeFiles/C1.dir/Point.c.s
 
 CMakeFiles/C1.dir/Point.c.o.requires:
 
@@ -143,7 +143,7 @@ C1: CMakeFiles/C1.dir/LinkedList.c.o
 C1: CMakeFiles/C1.dir/Point.c.o
 C1: CMakeFiles/C1.dir/build.make
 C1: CMakeFiles/C1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zf/CLionProjects/C1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable C1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zhaofeng/Desktop/数据结构/linked.list/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable C1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/C1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -162,6 +162,6 @@ CMakeFiles/C1.dir/clean:
 .PHONY : CMakeFiles/C1.dir/clean
 
 CMakeFiles/C1.dir/depend:
-	cd /Users/zf/CLionProjects/C1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zf/CLionProjects/C1 /Users/zf/CLionProjects/C1 /Users/zf/CLionProjects/C1/cmake-build-debug /Users/zf/CLionProjects/C1/cmake-build-debug /Users/zf/CLionProjects/C1/cmake-build-debug/CMakeFiles/C1.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/zhaofeng/Desktop/数据结构/linked.list/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zhaofeng/Desktop/数据结构/linked.list /Users/zhaofeng/Desktop/数据结构/linked.list /Users/zhaofeng/Desktop/数据结构/linked.list/cmake-build-debug /Users/zhaofeng/Desktop/数据结构/linked.list/cmake-build-debug /Users/zhaofeng/Desktop/数据结构/linked.list/cmake-build-debug/CMakeFiles/C1.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/C1.dir/depend
 

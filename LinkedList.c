@@ -164,10 +164,23 @@ bool isempty(PNODE pHead){
 
     return true;
 }
+int length(PNODE pHead)
+{
+    PNODE p = pHead->PNEXT;
+    int i = 0;
+    while (NULL != p){
+        ++i;
+        p = p->PNEXT;
+    }
+
+    return i;
+}
 
 PNODE insert_linkedList(PNODE pHead,int idx,int val){
 
-    
+    int len = length(pHead);
+    if (len -1 < idx) return NULL;
+
 }
 PNODE remove_linkedList(PNODE pHead,int idx,int val){
 
