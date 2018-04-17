@@ -22,7 +22,7 @@ void  traverse_linkedList(PNODE pHead);
 bool isempty(PNODE pHead);
 int length(PNODE pHead);
 bool insert_linkedList(PNODE pHead,int idx,int val);
-PNODE remove_linkedList(PNODE pHead,int idx,int val);
+bool remove_linkedList(PNODE pHead,int idx,int *var);
 
 //测试用
 PNODE createTail2_linkedList();

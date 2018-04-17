@@ -19,7 +19,11 @@ int main() {
 //    PNODE  pHead = createHead2_linkedList();
     traverse_linkedList(pHead);
 
-    insert_linkedList(pHead,3,11);
+//    insert_linkedList(pHead,6,11);
+    int remove_var = -1;
+    remove_linkedList(pHead,3, &remove_var);
+
+    printf("remove.value:%d\n",remove_var);
     traverse_linkedList(pHead);
 
     return 0;

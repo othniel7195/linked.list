@@ -152,8 +152,11 @@ void  traverse_linkedList(PNODE pHead){
 
     while (NULL != p){
         printf("%d ,",p->data);
+        printf("遍历节点地址:%x\n",p);
         p = p->PNEXT;
     }
+
+    printf("\n===============\n");
 
 }
 
@@ -187,8 +190,10 @@ bool insert_linkedList(PNODE pHead,int idx,int val){
 
 
         ++i;
+
     }
 
+    printf("i:%d\n",i);
     //如果idx前一个节点为NULL 那么异常
     if (p == NULL) return false;
 
@@ -200,6 +205,32 @@ bool insert_linkedList(PNODE pHead,int idx,int val){
     return true;
 
 }
-PNODE remove_linkedList(PNODE pHead,int idx,int val){
+bool remove_linkedList(PNODE pHead,int idx,int *var){
 
+    int i = 0;
+    PNODE p = pHead;
+    //从头结点开始判断每个节点是否为空，用删除idx的节点必须知道idx前一个节点，
+    //让idx前一个节点直接指向idx后一个节点
+
+    while (NULL != p && i < idx -1){
+        p = p->PNEXT;
+        ++i;
+        printf("pppp:%x\n",p);
+    }
+
+    //获取删除的idx前的一个节点p
+
+
+    if (p->PNEXT == NULL) {
+        printf("remove的节点是NULL\n");
+
+        return false;
+    }
+
+    printf("remove1\n");
+    PNODE tmp = p->PNEXT;
+    *var = tmp->data;
+    p->PNEXT = p->PNEXT->PNEXT;
+    free(tmp);
+    return true;
 }
