@@ -6,22 +6,26 @@
 
 void create(LkSTACK stack){
 
-    stack->LkStackBottom = (LkNODE)malloc(sizeof(LkNODE));
-    if (NULL == stack->LkStackBottom){
+    LkNODE  node = (LkNODE)malloc(sizeof(LkNODE));
+    node->LkNEXT = NULL;
+
+    if (NULL == node){
         printf("stack create fail");
         exit(-1);
     }
 
     //空栈  栈顶==栈底
-    stack->LkStackTop = stack->LkStackBottom;
-    stack->LkStackTop->LkNEXT = NULL;
+    stack->LkStackTop = node;
+    stack->LkStackBottom = node;
 }
 void push_stack(LkSTACK stack,int value){
     /*压栈 类似链表的头插法  新的节点插入链表头*/
     LkNODE node = (LkNODE)malloc(sizeof(LkNODE));
     node->data = value;
-    node->LkNEXT = stack->LkStackTop;/*新节点的next 指向top*/
+    node->LkNEXT = stack->LkStackTop;/*新节点的next 指向top
+ * 如果 node->LkNEXT = stack->LkStackTop->LkNEXT 那么node->LkNEXT 永远等于NULL*/
     stack->LkStackTop = node;/*top 指向栈顶*/
+
 }
 void pop_stack(LkSTACK stack,int *value){
 
@@ -35,8 +39,9 @@ void traverse_stack(LkSTACK stack){
 
     LkNODE node = stack->LkStackTop;
 
-    while (NULL != node){
-        printf("%d:%x \n",node->data,node);
+    /*如果node != NULL 那么最后有一个 node 也就是push的第一个节点的next 是 最开始的top 那么node.data = 0  node.LkNEXT == NULL*/
+    while (node->LkNEXT!= NULL){
+        printf("%d\n",node->data);
         node = node->LkNEXT;
     }
 }

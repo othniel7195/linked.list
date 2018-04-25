@@ -17,12 +17,12 @@ PNODE createHead_linkedList(int len){
 
     for (int i = 0; i < len; ++i) {
 
-        printf("输入第%d个链表值",i);
-        scanf("%d",&var);
+//        printf("输入第%d个链表值",i);
+//        scanf("%d",&var);
         //把第一pNew 变成了PNEXT 为NULL的尾节点，pHead.PNEXT永远是指向链表第一个有效节点
         // ,pHead永远是链表第一个无效节点
         PNODE pNew = (PNODE)malloc(sizeof(NODE));
-        pNew->data = var;
+        pNew->data = (i+1);
         pNew->PNEXT = pHead->PNEXT;
         pHead->PNEXT = pNew;
 

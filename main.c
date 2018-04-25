@@ -11,14 +11,14 @@ int main() {
     printf("Hello, World!\n");
 
 
-//    int len;
+    int len;
 //    printf("输入链表长度:");
 //    scanf("%d",&len);
-//    PNODE pHead = createHead_linkedList(len);
+//    PNODE pHead = createHead_linkedList(5);
 //    PNODE pHead = createTail_linkedList(len);
 //    PNODE pHead = createTail2_linkedList();
 //    PNODE  pHead = createHead2_linkedList();
- //   traverse_linkedList(pHead);
+//    traverse_linkedList(pHead);
 
 //    insert_linkedList(pHead,6,11);
 //    int remove_var = -1;
@@ -27,8 +27,8 @@ int main() {
 //    printf("remove.value:%d\n",remove_var);
 //    traverse_linkedList(pHead);
 
-    LkSTACK stack = NULL;
-    create(&stack);
+    LkSTACK stack;
+    create(stack);
     for (int i = 0; i < 5 ; ++i) {
         printf("第%d次压栈\n",i+1);
         int var;
