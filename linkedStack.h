@@ -1,6 +1,6 @@
 //
 // Created by zhao.feng on 2018/4/25.
-// 先进先出
+// 后进先出
 
 #ifndef C1_LINKEDSTACK_H
 #define C1_LINKEDSTACK_H
