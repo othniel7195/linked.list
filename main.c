@@ -5,7 +5,7 @@
 #include "Point.h"
 #include "linkedStack.h"
 #include "linkedQueue.h"
-
+#include "arrayStack.h"
 
 
 int main() {
@@ -45,21 +45,44 @@ int main() {
 //        printf("出栈的数据:%d\n",pop_val);
 //    }
 
-    LkQUEUE queue;
-    create_queue(queue);
-    for (int i = 0; i < 5 ; ++i) {
-        printf("第%d次入队\n",i+1);
+//    LkQUEUE queue;
+//    create_queue(queue);
+//    for (int i = 0; i < 5 ; ++i) {
+//        printf("第%d次入队\n",i+1);
+//        int var;
+//        scanf("%d",&var);
+//        in_queue(queue,var);
+//    }
+//
+//    traverse_queue(queue);
+//
+//    for (int j = 0; j <5 ; ++j) {
+//        int out_val=-1;
+//        out_queue(queue,&out_val);
+//        printf("出队的数据:%d\n",out_val);
+//    }
+
+    ArrSTACK stack;
+    create_arr_stack(stack);
+    for (int i = 0;i < 5 ; ++i){
+
+        printf("数组第%d次入栈\n",i+1);
         int var;
         scanf("%d",&var);
-        in_queue(queue,var);
+        push_arr_stack(stack,var);
+
     }
 
-    traverse_queue(queue);
+    traverse_arr_stack(stack);
 
-    for (int j = 0; j <5 ; ++j) {
-        int out_val=-1;
-        out_queue(queue,&out_val);
-        printf("出队的数据:%d\n",out_val);
+    for (int j = 0; j < 5; ++j) {
+        int var;
+        pop_arr_stack(stack,&var);
+        printf("数组出栈%d\n",var);
     }
+
+    traverse_arr_stack(stack);
+
+
     return 0;
 }
