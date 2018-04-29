@@ -6,7 +6,7 @@
 #include "linkedStack.h"
 #include "linkedQueue.h"
 #include "arrayStack.h"
-
+#include "arrayQueue.h"
 
 int main() {
     printf("Hello, World!\n");
@@ -62,26 +62,51 @@ int main() {
 //        printf("出队的数据:%d\n",out_val);
 //    }
 
-    ArrSTACK stack;
-    create_arr_stack(stack);
-    for (int i = 0;i < 5 ; ++i){
+//    ArrSTACK stack;
+//    create_arr_stack(stack);
+//    for (int i = 0;i < 5 ; ++i){
+//
+//        printf("数组第%d次入栈\n",i+1);
+//        int var;
+//        scanf("%d",&var);
+//        push_arr_stack(stack,var);
+//
+//    }
+//
+//    traverse_arr_stack(stack);
+//
+//    for (int j = 0; j < 5; ++j) {
+//        int var;
+//        pop_arr_stack(stack,&var);
+//        printf("数组出栈%d\n",var);
+//    }
+//
+//    traverse_arr_stack(stack);
 
-        printf("数组第%d次入栈\n",i+1);
+
+    printf("循环队列开始------------\n");
+    ArrQUE queue;
+    create_arr_queue(queue);
+
+    for (int i = 0; i < 5; ++i) {
+
+        printf("循环队列第%d次入队\n",i+1);
         int var;
         scanf("%d",&var);
-        push_arr_stack(stack,var);
-
+        in_arr_queue(queue,var);
     }
 
-    traverse_arr_stack(stack);
+    printf("循环队列第一遍历-----------\n");
+    traverse_arr_queue(queue);
 
-    for (int j = 0; j < 5; ++j) {
-        int var;
-        pop_arr_stack(stack,&var);
-        printf("数组出栈%d\n",var);
+    for (int j = 0; j < 8 ; ++j) {
+        int var = -1;
+        out_arr_queue(queue,&var);
+        printf("循环队列出队数据:%d\n",var);
     }
 
-    traverse_arr_stack(stack);
+    printf("循环队列第二遍历-----------\n");
+    traverse_arr_queue(queue);
 
 
     return 0;

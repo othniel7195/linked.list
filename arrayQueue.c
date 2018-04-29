@@ -7,46 +7,53 @@
 void create_arr_queue(ArrQUE queue){
 
     queue->arr[MAX_SIZE] = (int)malloc(sizeof(int) * MAX_SIZE);
-    queue->top = -1;
+    queue->front = 0;
+    queue->rear = 0;
+
 }
 bool full_arr_queue(ArrQUE queue){
 
-    if (queue->top == MAX_SIZE - 1){
+    if (((queue->rear+1) % MAX_SIZE) == queue->front){
+        printf("循环队列满了\n");
         return true;
     }
-
     return false;
 }
 bool empty_arr_queue(ArrQUE queue){
-
-    if (queue->top == -1){
+    if (queue->rear == queue->front){
+        printf("循环队列空了\n");
         return true;
     }
     return false;
+
+
 }
-void push_arr_queue(ArrQUE queue, int val){
+void in_arr_queue(ArrQUE queue, int val){
+
     if (!full_arr_queue(queue)){
-
-        int i = ++queue->top;
-        printf("入队的idx:%d\n",i);
-        queue->arr[i] = val;
-
+        int idx = queue->rear % MAX_SIZE;
+        queue->arr[idx] = val;
+        ++queue->rear;
     }
 }
-
-void pop_arr_queue(ArrQUE queue, int *val){
+void out_arr_queue(ArrQUE queue, int *val){
 
     if (!empty_arr_queue(queue)){
-        *val = queue->arr[queue->top--];
+        int idx = queue->front;
+        printf("out -- 1:%d\n",idx);
+        *val = queue->arr[idx];
+        printf("out -- 2:%d\n",*val);
+        ++queue->front;
     }
-
 }
 void traverse_arr_queue(ArrQUE queue){
 
+    if (!empty_arr_queue(queue)){
 
-    for (int i = 0; i <= queue->top; ++i) {
+        for (int i = queue->front; i < queue->rear ; ++i) {
+            int val = queue->arr[i];
+            printf("遍历循环队列的值:%d\n",val);
 
-        int v = queue->arr[i];
-        printf("%d:\n",v);
+        }
     }
 }
